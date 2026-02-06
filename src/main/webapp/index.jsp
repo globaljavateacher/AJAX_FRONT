@@ -11,7 +11,7 @@
 		</div>
 		<div>
 			<form>
-				<input type="text" id="messag" placeholder="메세지"><br>
+				<input type="text" id="message" placeholder="메세지"><br>
 				<input type="button" id="btnSend" value="전송">
 			</form>
 		</div>
@@ -19,7 +19,7 @@
 		<script>
 			const request = async () => {
 				try {
-					const message = document.getElementById('messag').value.trim();
+					const message = document.getElementById('message').value.trim();
 					const obj = {
 						msg: message
 					};
@@ -37,4 +37,5 @@
 			document.getElementById('btnSend').addEventListener('click', request);
 		</script>
 	</body>
+
 </html>
