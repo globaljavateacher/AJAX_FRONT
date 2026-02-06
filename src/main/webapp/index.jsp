@@ -26,7 +26,7 @@
 					const params = new URLSearchParams({
 						data: JSON.stringify(obj)
 					});
-					const response = await fetch(`http://192.168.0.8:8081/BACK/api/test?${params}`);
+					const response = await fetch(`http://192.168.0.8:8081/AJAX_BACK/api/test?${params}`);
 					const data = await response.json();
 					console.log(data);
 					document.getElementById('result').innerHTML = data.msg;
@@ -39,3 +39,4 @@
 	</body>
 
 </html>
+
